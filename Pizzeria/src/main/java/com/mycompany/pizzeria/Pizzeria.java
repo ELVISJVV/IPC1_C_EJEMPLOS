@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.pizzeria;
 
 /**
@@ -16,13 +12,12 @@ public class Pizzeria {
     * Estos métodos y atributos estáticos son únicos para cada clase
   */
  
- 
   public static Pizza[] estateria = new Pizza[100]; //Atributo estático declarado e inicializado a nivel de clase (ambito global) de tipo Pizza. Es público y accesible de todos lados
 
   public Pizzeria () { //Constructor Pizzeria no utilizado aún
   }
     
-  /**
+  /*
    * Este método colocarPizza recibe un objeto tipo pizza y lo coloca en un espacio disponible del arreglo
    * El parámetro nueva_pizza es un objeto tipo pizza a colocar dentro del arreglo (llamado estatnteria) de pizzas
    * Hace un recorrido por todo el arreglo buscando un espacio null (vacio o que aún no tiene un objeto referenciado)
@@ -54,7 +49,6 @@ public class Pizzeria {
    * Este método busca las coincidencias de un tipo de masa dentro de todos los objetos pizza, si encuentra algun objeto con este tipo de masa, sustituye el tipo de masa por otro
    * Método que recibe como parámetor un tipode masa a buscar (tipoMasa) y un tipo de masa a modificar (nuevoTipoMasa) cuando encuentre una coincidencia del tipo de masa buscado
   */
-
   public static void modificarPizzas(String tipoMasa, String nuevoTipoMasa) {
       for(Pizza pizza: estateria) { //Bucle For Each, buscar objeto pizza en estantería.
          if(pizza != null){ //Asegurar la acción para objetos Pizza no nulos.
