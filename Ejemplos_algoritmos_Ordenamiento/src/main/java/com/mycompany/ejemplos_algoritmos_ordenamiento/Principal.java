@@ -40,6 +40,29 @@ public class Principal {
         System.out.println("\n-----------------\n");
 
 
+
+        System.out.println("-------ALGORITMOS DESCENDENTES-----\n");
+
+        int[] arreglo4 = { 5, 2, 4, 3, 1 }; 
+        ord.burbujaDescendente(arreglo4);
+        System.out.println("\n-----BURBUJA-----");
+        ord.imprimir(arreglo4);
+        System.out.println("\n-----------------\n");
+
+
+        int[] arreglo5 = { 7, 3, 1, 2, 8 }; 
+        ord.seleccionDescendente(arreglo5);
+        System.out.println("\n----SELECCIÓN----");
+        ord.imprimir(arreglo5);
+        System.out.println("\n-----------------\n");
+
+        int[] arreglo6 = { 10, 6, 5, 3, 1 }; 
+        ord.insercionDescendente(arreglo6);
+        System.out.println("\n----INSERSIÓN----");
+        ord.imprimir(arreglo6);
+        System.out.println("\n-----------------\n");
+
+
     }
     
 }
